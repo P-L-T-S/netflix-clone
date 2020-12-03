@@ -1,0 +1,54 @@
+.moviesRow{
+    margin-bottom: 30px;
+}
+.moviesRow h2{
+    margin: 0 0 0 30px;
+}
+.moviesRow .moviesRow--listarea{
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+.moviesRow .moviesRow--list{
+    transition: all ease 1s
+}
+.moviesRow .moviesRow--item{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+.moviesRow .moviesRow--item img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+.moviesRow .moviesRow--item img:hover{
+    transform: scale(1);
+}
+.moviesRow .moviesRow--leftArrow, .moviesRow .moviesRow--rightArrow{
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.8s;
+}
+.moviesRow .moviesRow--leftArrow{
+    left: 0;
+}
+.moviesRow .moviesRow--rightArrow{
+    right: 0;
+}
+.moviesRow:hover .moviesRow--leftArrow, .moviesRow:hover .moviesRow--rightArrow{
+    opacity: 1;
+}
+@media(max-width: 780px){
+    .moviesRow .moviesRow--leftArrow, .moviesRow .moviesRow--rightArrow{
+        opacity: 1;
+    }
+}

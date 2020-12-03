@@ -1,0 +1,103 @@
+.feature{
+    height: 100vh;
+}
+.feature--vertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%)
+}
+.feature--horizontal{
+    width: inherit;
+    height: inherit;
+    padding: 70px 0 150px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, #111 20%, transparent 80%);
+}
+.feature--name{
+    font-size: 60px;
+    font-weight: bold;
+}
+.feature--info{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: flex;
+}
+.feature--release,.feature--seasons, .feature--rate{
+    margin-right: 15px;
+}
+.feature--rate{
+    color: #46d369;
+}
+.feature--description{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+.feature--buttons{
+    margin: 15px 0;
+    display: flex;
+}
+.watch-button, .list-button{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+    opacity: 1;
+    /* transition: all ease 0.5s; */
+    position: relative;
+}
+.watch-button{
+    background-color: #fff;
+    color: #000;
+}
+.list-button{
+    background-color: #333;
+    color: #fff;
+}
+.watch-button:hover, .list-button:hover {
+    opacity: 0.9;
+    box-shadow: 4px 4px 1px #666;
+    top: -3px;
+    left: -3px;
+}
+.feature--genres{
+    margin: 15px 0;
+    font-size: 18px;
+    color: #999;
+}
+.feature--tagline{
+    margin: 15px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+@media(max-width: 700px){
+    .feature{
+        height: 80vh;
+    }
+    .feature--name{
+        font-size: 40px;
+    }
+    .feature--info{
+        font-size: 16px;
+    }
+    .feature--description{
+        color: #ccc;
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .watch-button, .list-button{
+        font-size: 16px;
+        padding: 7px 15px;
+    }
+    .feature--genres{
+        color: #ccc;
+        font-size: 14px;
+    }
+}
